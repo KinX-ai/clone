@@ -1,4 +1,0 @@
-function flowerFly(){this.view=document.querySelector(".contain-tree-flower:nth-child(1)");this.typeObject=["canh-hoa-dao1","canh-hoa-dao2","canh-hoa-dao3","canh-hoa-dao4","bong-hoa-dao1","bong-hoa-dao2"];this.random=function(){this.i=Math.floor(Math.random()*6);this.top=Math.floor(Math.random()*2)*100+30+Math.floor(Math.random()*10)*Math.floor(Math.random()*5);this.left=Math.floor(Math.random()*2)*100+30+Math.floor(Math.random()*10)*Math.floor(Math.random()*5);this.aTop=Math.ceil(Math.random()*6)/10;do{this.aLeft=Math.ceil(Math.random()*6)/10;}while(this.aLeft==this.aTop);if(this.i==4||this.i==5){this.width=8;this.height=8;}else{this.width=4;this.height=4;}};}
-flowerFly.prototype=new configFly();function displayFlowerFly(){var listFlowerFly=[];var i=0;setTimeout(function(){var interval=setInterval(function(){listFlowerFly[i]=new flowerFly();listFlowerFly[i].createObjectFly();++i;if(i==50)
-clearInterval(interval);},500);},2000);}
-displayFlowerFly();
