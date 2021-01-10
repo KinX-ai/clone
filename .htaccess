@@ -1,7 +1,4 @@
-RewriteEngine On
-
-RewriteBase /
- 
+#example.com/page will display the contents of example.com/page.html
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
@@ -10,21 +7,3 @@ RewriteRule ^(.+)$ $1.html [L,QSA]
 #301 from example.com/page.html to example.com/page
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
 RewriteRule ^(.*)\.html$ /$1 [R=301,L]
-
-RewriteRule ^api/ /api.php [QSA,L]
-RewriteRule ^bot-api.php /free-api.php [QSA,L]
-RewriteRule ^(([^/]+/)*[^.]+)$ /$1.php [L]
-
-RewriteRule ^home.php$ /index.php [L]
-RewriteRule ^index.html$ /index.php [L]
-RewriteRule ^index$ /index.php [L]
-RewriteRule ^index.asp$ /index.php [L]
-RewriteRule ^index.htm$ /index.php [L]
-RewriteRule ^home.html$ /index.php [L]
-RewriteRule ^home$ /index.php [L]
-RewriteRule ^home.asp$ /index.php [L]
-RewriteRule ^home.htm$ /index.php [L]
-
-ErrorDocument 404 /index.php
-
-Options -Indexes
