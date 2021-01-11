@@ -7,5 +7,8 @@ RewriteRule ^(.+)$ $1.html [L,QSA]
 #301 from example.com/page.html to example.com/page
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
 RewriteRule ^(.*)\.html$ /$1 [R=301,L]
-Redirect 301 /form.html https://forms.gle/7sQxC1UFVmVJ2trH8
 ErrorDocument 404 /404.html
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.berver.tk/form [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.berver.tk/form [NC]
+RewriteRule ^(.*)$ https://forms.gle/Sh3k8BKPe6Mnizrf7 [L,R=301,NC]
