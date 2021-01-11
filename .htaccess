@@ -9,6 +9,6 @@ RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
 RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 ErrorDocument 404 /404.html
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www.berver.tk/form [NC,OR]
+RewriteCond %{HTTP_HOST} ^berver.tk/form [NC,OR]
 RewriteCond %{HTTP_HOST} ^www.berver.tk/form [NC]
 RewriteRule ^(.*)$ https://forms.gle/Sh3k8BKPe6Mnizrf7 [L,R=301,NC]
