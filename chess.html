@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
-    <title>Chess JS: A JavaScript Chess AI</title>
+    <title>Chess AI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Chess Js, Chess Js, Chessjs, Ashish Papanai, ChessJS, ChessJs, Chess AI, Chess Tutorial">
     <meta name="author" content="Ashish Papanai">
@@ -39,15 +39,15 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
+                        <a class="nav-link" href="index.html">Trang chủ
                       <span class="sr-only">(current)</span>
                     </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="about.html">Về chúng tôi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="blank" href="https://github.com/ashishpapanai/chessJS">Code</a>
+                        <a class="nav-link" target="blank" href="https://github.com/ashishpapanai/chessJS">Mã nguồn mở</a>
                     </li>
                 </ul>
             </div>
@@ -63,10 +63,10 @@
                     <i class="fa fa-times closeBtn"></i>
                 </div>
                 <div class="modal-text">
-                    <p>This web site is best viewed at screen resolution of 1280 x 960 pixels or higher. Mobile version of this website doen't support FEN Puzzle analysis. <br> <br> Don't let your device hamper your experience. </p>
+                    <p>Trang web này được xem tốt nhất ở độ phân giải màn hình 1280 x 960 pixel hoặc cao hơn. Phiên bản di động của trang web này không hỗ trợ phân tích FEN Puzzle. <br> <br> Đừng để thiết bị cản trở trải nghiệm của bạn. </p>
                 </div>
                 <div class="modal-footer">
-                    <button class="understand-button">I Understand!</button>
+                    <button class="understand-button">Tôi đã hiểu!</button>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@
             <a class="top-link" target="blank" href="https://github.com/ashishpapanai/chessJS">Code</a>
         </div> -->
         <div class="top-div">
-            <h1>Chess JS: A JavaScript Chess AI</h1>
+            <h1>Chess AI</h1>
             <div id="fenInDiv">
                 <div class="fen-form-label-div">
                     <span for="fenIn" id="fen-label">FEN: </span>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="fen-form-input-div">
                     <input type="text" id="fenIn" name="fenIn" />
-                    <button type="button" id="SetFen">Set Position</button>
+                    <button type="button" id="SetFen">Đặt vị trí</button>
                 </div>
             </div>
         </div>
@@ -93,31 +93,31 @@
             <div id="Board">
             </div>
             <div id="EngineOutput">
-                <span class="thinking-time-text">Thinking Time: </span>
+                <span class="thinking-time-text">Thời gian nghỉ: </span>
                 <select id="ThinkTimeChoice">
-                    <option value="1">1s</option>
-                    <option value="2">2s</option>
-                    <option value="4">4s</option>
-                    <option value="6">6s</option>
-                    <option value="8">8s</option>
-                    <option value="10">10s</option>
+                    <option value="1">1 giây</option>
+                    <option value="2">2 giây</option>
+                    <option value="4">4 giây</option>
+                    <option value="6">6 giây</option>
+                    <option value="8">8 giây</option>
+                    <option value="10">10 giây</option>
                 </select><br /><br /><br />
-                <span id="BestOut">Best Move:</span><br />
-                <span id="DepthOut">Depth:</span><br />
-                <span id="ScoreOut">Score:</span><br />
-                <span id="NodesOut">Nodes:</span><br />
-                <span id="OrderingOut">Ordering:</span><br />
-                <span id="TimeOut">Time:</span><br /><br />
+                <span id="BestOut">Di chuyển tốt nhất:</span><br />
+                <span id="DepthOut">Chiều sâu:</span><br />
+                <span id="ScoreOut">Điểm số:</span><br />
+                <span id="NodesOut">Điểm giao:</span><br />
+                <span id="OrderingOut">Tỉ lệ thua:</span><br />
+                <span id="TimeOut">Thời gian:</span><br /><br />
                 <div class="button-container-3">
-                    <button type="button" class="button-tertiary" id="ResignButton">Resign </button><br />
+                    <button type="button" class="button-tertiary" id="ResignButton">Đầu hàng</button><br />
                 </div>
                 <div class="button-container-1">
-                    <button type="button" class="button-primary" id="SearchButton">Move Now</button><br />
-                    <button type="button" class="button-primary" id="NewGameButton">New Game</button><br />
+                    <button type="button" class="button-primary" id="SearchButton">Di chuyển ngay</button><br />
+                    <button type="button" class="button-primary" id="NewGameButton">Chơi lại</button><br />
                 </div>
                 <div class="button-container-2">
-                    <button type="button" class="button-secondary" id="FlipButton">Flip Board</button><br /><br />
-                    <button type="button" class="button-secondary" id="TakeButton">Take Back</button><br /><br />
+                    <button type="button" class="button-secondary" id="FlipButton">Đối chiếu</button><br /><br />
+                    <button type="button" class="button-secondary" id="TakeButton">Trở lại</button><br /><br />
                 </div>
 
                 <span id="GameStatus"></span>
