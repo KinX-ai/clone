@@ -301,15 +301,15 @@ function SearchPosition() {
 
 function UpdateDOMStats(dom_score, dom_depth) {
 
-	let scoreText = "Score: " + (dom_score / 100).toFixed(2);
+	let scoreText = "Điểm số: " + (dom_score / 100).toFixed(2);
 	if(Math.abs(dom_score) > MATE - MAXDEPTH) {
-		scoreText = "Score: Mate In " + (MATE - (Math.abs(dom_score))-1) + " moves";
+		scoreText = "Điểm số: Thắng sau " + (MATE - (Math.abs(dom_score))-1) + " lượt";
 	}
 	
-	$("#OrderingOut").text("Ordering: " + ((SearchController.fhf/SearchController.fh)*100).toFixed(2) + "%");
-	$("#DepthOut").text("Depth: " + dom_depth);
+	$("#OrderingOut").text("Tỉ lệ thua: " + ((SearchController.fhf/SearchController.fh)*100).toFixed(2) + "%");
+	$("#DepthOut").text("Độ sâu: " + dom_depth);
 	$("#ScoreOut").text(scoreText);
-	$("#NodesOut").text("Nodes: " + SearchController.nodes);
-	$("#TimeOut").text("Time: " + (($.now()-SearchController.start)/1000).toFixed(1) + "s");
-	$("#BestOut").text("BestMove: " + PrMove(SearchController.best));
+	$("#NodesOut").text("Điểm giao: " + SearchController.nodes);
+	$("#TimeOut").text("Thời gian: " + (($.now()-SearchController.start)/1000).toFixed(1) + "s");
+	$("#BestOut").text("Di chuyển tốt nhất: " + PrMove(SearchController.best));
 }
