@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+body {
+    font-size: 0;
+    padding: 30px;
+    transition: background-color .3s ease-in-out;
+}
+
+.countdown {
+    display: none; 
+}
+
+p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+p span {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+input {
+    border: 1px solid #000000;
+    margin-left: 5px;
+}
+
+input.not-valid {
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+
+label {
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    background: #bada00;
+    font-size: 14px;
+    padding: 5px;
+    cursor: pointer;
+}
