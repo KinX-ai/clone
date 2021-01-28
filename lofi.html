@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lofi Hoảng Huy- BerWebsite</title>
+	<link rel="stylesheet" type="text/css" href="css/lofi.css">
+	<link rel="icon" href="clouds/2x/lo-fi.png" type="image/x-icon">
+	<link href="css/lofi2.css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="switch">
+		<button id="btn2"><img src="icon/menu.svg" id="icon2"></button>
+		
+	</div>
+	<div class="form">
+			<input class="input" type="text" onfocus="this.value= ''" placeholder="New Playlist ID">
+			<button class="ok"><img src="icon/check.svg"></button>
+	</div>
+	<div class="bg">
+		<div class="color"></div>
+	</div>
+	<div id="player"></div>
+	<div class="player">
+		<div class="layer">
+			<div class="prev">
+				<button class="btn-prev"><img src="icon/prev.svg"></button>
+			</div>
+			<div class="play">
+				<button id="btn"><img src="icon/play.svg" id="icon"></button>
+			</div>
+
+			<div class="next">
+				<button class="btn-next"><img src="icon/next.svg"></button>
+			</div>
+			<div class="repeat">
+				<button class="btn-repeat"><img src="icon/repeat.svg"></button>
+			</div>
+			<div class="title" id="title"></div>
+			
+		</div>
+
+	</div>
+	
+
+	<script src="npm/axios/dist/axios.min.js"></script>
+    <script src="js/lofi.js"></script>
+</body>
+</html>
