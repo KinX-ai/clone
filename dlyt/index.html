@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Video Downloder</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <div class="heading">
+            <h3>YT Video Downloader</h3>
+        </div>
+        <div class="nav1">
+            <nav>
+                <a href="/">Home</a>
+                <a href="https://online-typing-speed.blogspot.com/">Typing Test</a>
+                <a href="wwww.computerwiki.online">computerwiki</a>
+            </nav>
+        </div>
+        <div class="main">
+            <h1>Youtube Video Downloader And Mp3 Converter</h1>
+            <div class="input">
+                <input id="int" type="url" placeholder="Enter URL">
+                <button id="btn" onclick="startVideo()">Start<i class="fa fa-arrow-right"
+                        aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div class="videoinfo" id="information">
+            <h3>Download MP3 or MP4</h3>
+            <div class="thumb">
+                <img id="myimg" class="mx-auto d-block" src=" ">
+            </div>
+            <div class="buttons">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Formats</th>
+                            <th>Download</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.Mp3</td>
+                            <td><button class="btn-d" onclick="download()">Download <i class="fas fa-download"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>360p.Mp4</td>
+                            <td><button class="btn-d" onclick="download1()">Download <i class="fas fa-download"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>480p.Mp4</td>
+                            <td><button class="btn-d" onclick="download2()">Download <i class="fas fa-download"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="container">
+            <h2>How To Download Youtube Video</h2>
+            <p>1. Copy the youtube video URL by pressing ctrl + c or long press in the mobile.</p>
+            <p> 2. Next paste the video URL in the input box and press the start button.</p>
+            <p>3. Next the format and the thumbnail will be open. download the video clicking the download button.
+            </p>
+            <h2>What is online youtube video downloader</h2>
+            <P>There are many people who want to save the youtube videos in their mobile phones. so that they download
+                any app or software to do this. But online youtube video downloaders provide you to download videos from
+                the url and save on your memory card. Here you can download youtube videos and convert youtube video to
+                mp3. Thus you also can save songs from Youtube.</P>
+        </div>
+        <h2 class="heading2">Features of Youtube Video Downloader</h2>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-downlod"></i>High Speed</h3>
+                <p class="card-text">This Youtube video downloader will provide you high speed download videos. There
+                    are more options to download video in your fev quality.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-arrow-right"></i>Free Download</h3>
+                <p class="card-text">THere you can download youtube videos for free. No charge will be taken.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-video"></i>MP3 & Mp4</h3>
+                <p class="card-text">You can download youtube videos and also convert youtube video to audio or mp3.</p>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>copyright © 2020<a href="#"> YT Video Downloader</a>— by Sk Shoyeb</p>
+        <div class="links">
+            <a href="https://online-typing-speed.blogspot.com/">Typing Speed Test</a>
+            <a href="https://mylovepercentage.blogspot.com/">Love Calculator</a>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>

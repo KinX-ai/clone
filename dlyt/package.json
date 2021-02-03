@@ -1,0 +1,27 @@
+{
+  "name": "ytdownloder",
+  "version": "1.0.0",
+  "description": "This is a youtube downloader website and here you cam download youtube videos. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "youtube",
+    "video",
+    "download",
+    "youtube",
+    "download",
+    "youtube",
+    "downloader"
+  ],
+  "author": "sk shoyeb",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-html-parser": "^1.2.20",
+    "ytdl-core": "^2.1.7"
+  }
+}

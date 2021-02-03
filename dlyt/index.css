@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 25px;
+}
+.input{
+    margin: auto;
+    width: 753px;
+    height: auto;
+    background-color: #fff;
+}
+#int{
+    width: 640px;
+    height: 55px;
+    border: none;
+    font-size: 24px;
+}
+#btn{
+    width: 109px;
+    height: 55px;
+    font-size: 26px;
+    background-color:#ff5916;
+    border-color: #ff5916;
+    color: #fff;
+    
+}
+.header{
+    width: 100%;
+    height: auto;
+    background-color: #5352ed;
+    color: #fff;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+.heading{
+    width: 100%;
+    height: auto;
+}
+.heading h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav1{
+    width: 100%;
+    height: auto;
+}
+.nav1 nav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    margin-right: 34px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav1 nav{
+    width: 349px;
+    margin: auto;
+}
+.main{
+    padding-top: 80px;
+    font-family: Calibri;
+}
+.videoinfo{
+    width: 651px;
+    background-color:  #5352ed;
+    height: auto;
+    box-shadow: rgb(80, 80, 80) 0px 12px 29px -2px;
+    margin: auto;
+    margin-top: 30px;
+    display: none;
+}
+
+.videoinfo h3{
+    font-family: Calibri;
+    font-size: 39px;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+.thumb{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#myimg{
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
+.buttons{
+    width: 420px;
+    height: auto;
+    margin: auto;
+
+}
+.table tbody tr td{
+    color: #fff;
+    font-weight: 400;
+    font-family: Calibri;
+    font-size: 19px;
+}
+.table tbody tr td button{
+    color: #fff;
+    font-weight: 400;
+    font-family: Calibri;
+    font-size: 19px;
+    border-radius:10px;
+}
+.table thead tr th{
+    color: #fff;
+    font-weight: 400;
+    font-family: calibri;
+    font-size: 19px;
+
+}
+.btn-d{
+    width: 127px;
+    height: 43px;
+    border: none;
+    box-shadow: rgb(80, 80, 80) 0px 12px 29px -2px;
+    background-color:#ff5916 ;
+}
+.blog{
+    background-color:#fff;
+    width: 100%;
+    height: auto;
+}
+.container h2{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #5352ed;
+    padding-top: 10px;
+}
+.container{
+    margin-top: 15px;
+}
+.heading2{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 11px;
+}
+.card{
+    width: 350px;
+    height: 182px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 56px;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    float:right;
+    color: white;
+    font-weight: 400;
+    margin-top: 15px;
+    text-align: center;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .input{
+        width: 100%;
+    }
+    #int{
+        width: 73%;
+    }
+    #btn{
+        width: 25%;
+    }
+    .videoinfo{
+        width: 89%;
+        margin: auto;
+    }
+    #myimg{
+        width: 89%;
+    }
+    .card{
+        margin: auto;
+        float: none;
+    }
+    .footer{
+        float: left;
+    }
+    .buttons{
+        width: 89%;
+    }
+}

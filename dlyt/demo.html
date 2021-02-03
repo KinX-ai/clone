@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #url {
+            width: 450px;
+            height: 150px;
+        }
+
+        #btn {
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+    <input id="url" type="url">
+    <button id="btn" onclick="thumbnail()">Start</button>
+    <script>
+        var thumUrl = document.getElementById("url")
+        function thumbnail() {
+            var urlT = thumUrl.value;
+            var thumb = Youtube.thumb(urlT, 'small');
+            console.log(thumb);
+        }
+        var Youtube = (function () {
+            'use strict';
+
+            var video, results;
+
+            var getThumb = function (url, size) {
+                if (url === null) {
+                    return '';
+                }
+                size = (size === null) ? 'big' : size;
+                results = url.match('[\\?&]v=([^&#]*)');
+                video = (results === null) ? url : results[1];
+
+                if (size === 'small') {
+                    return 'http://img.youtube.com/vi/' + video + '/2.jpg';
+                }
+                return 'http://img.youtube.com/vi/' + video + '/0.jpg';
+            };
+
+            return {
+                thumb: getThumb
+            };
+        }());
+
+    </script>
+</body>
+
+</html>
