@@ -1,4 +1,9 @@
 {
-  "facebook": {},
+  "facebook": { 
+    "100051721170298": {
+      "reason": "https://imgur.com/TKsAoBo.png",
+      "noAdding": true
+    },
+},
   "discord": {}
 }
